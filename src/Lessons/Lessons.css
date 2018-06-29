@@ -1,0 +1,33 @@
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding: 0 20%;
+  border-spacing: 10px;
+  border-collapse: collapse;
+  margin-bottom: 50px
+}
+
+th {
+  font-size: 1.7em;
+  padding: 50px;
+  border-bottom: 2px solid black;
+}
+
+.week-th,
+.week-materials {
+  width: 8%;
+}
+
+@media screen and (max-width: 1047px) {
+  table {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 647px) { 
+   table {
+    padding: 0 5%;
+  }
+}

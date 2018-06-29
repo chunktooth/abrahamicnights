@@ -1,0 +1,15 @@
+.extra-div {
+  padding: 20px;
+  text-align: justify;
+}
+
+.extra-div p,
+.extra-div a {
+  display: inline;
+  margin: 0;
+}
+
+.topic {
+  margin-top: 20px;
+  font-weight: bold;
+}

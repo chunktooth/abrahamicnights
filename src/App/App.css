@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+ul,
+footer {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  height: 100px;
+}
+
+ul,
+footer,
+header,
+.fb,
+.nav-header {
+  margin: 0;
+  padding: 0;
+  background-color: #263934;
+  letter-spacing: 2px;
+  font-family: 'Fondamento', cursive;
+  font-size: 1em;
+}
+
+header,
+header .nav-header {
+  padding: 20px;
+  background-color: #3B5550;
+}
+
+li {
+  display: inline;
+  list-style: none;
+}
+
+li,
+.fb,
+.nav-header {
+  color: white;
+  padding: 42px;
+}
+
+.nav-header,
+.nav {
+  color: white;
+  text-decoration: none;
+}
+
+th,
+h2 {
+  margin: 0;
+  padding: 30px 20px;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li:hover,
+li:active {
+  text-decoration: underline #3B5550;
+  /*background-color: #52737D;*/
+}
+
+a:visited {
+  text-decoration: underline;
+}
+
+.selected {
+  text-decoration: underline #3B5550;
+}
+
+.Readings,
+.Videos,
+.Notes {
+  padding: 0 20%;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+}
+
+@media screen and (max-width: 1047px) {
+  .Readings,
+  .Videos,
+  .Notes {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 647px) {
+  .Readings,
+  .Videos,
+  .Notes {
+    padding: 0;
+  }
+
+  ul,
+  footer {
+    flex-direction: column;
+    padding: 30px 0
+  }
+
+  .nav-header,
+  .fb {
+    padding: 0;
+  }
+
+  li {
+    width: 100%;
+    padding: 0px
+  }
+}

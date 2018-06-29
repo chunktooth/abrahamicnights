@@ -1,0 +1,23 @@
+td {
+  border-bottom: 2px solid black;
+}
+
+.book-div {
+  margin: 30px;
+}
+
+.book-div p {
+  display: inline-block;
+  margin: 0;
+}
+
+.table-week {
+  font-weight: bold;
+  width: 10%;
+  text-align: left;
+}
+
+.table-materials {
+  width: 9%;
+  text-align: center;
+}

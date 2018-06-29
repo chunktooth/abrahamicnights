@@ -1,0 +1,15 @@
+.Notes {
+  padding: 0 20%;
+}
+
+.Notes p {
+  margin: 0;
+  padding: 0 0 30px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 647px) {
+  .Notes p {
+    margin: 5px 10px 50px;
+  }
+}
