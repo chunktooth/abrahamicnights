@@ -10,9 +10,11 @@ table {
 }
 
 th {
+  padding: 0;
+}
+
+h2 {
   font-size: 1.7em;
-  padding: 50px;
-  border-bottom: 1.5px solid black;
 }
 
 .week-th,
