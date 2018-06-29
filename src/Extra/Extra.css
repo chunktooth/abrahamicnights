@@ -1,5 +1,5 @@
 .extra-div {
-  padding: 20px;
+  padding: 10px;
   text-align: justify;
 }
 
@@ -10,6 +10,11 @@
 }
 
 .topic {
-  margin-top: 20px;
+  margin: 20px 27px 10px;
+  text-align: center;
   font-weight: bold;
+}
+
+hr {
+  margin: 0 10px;
 }

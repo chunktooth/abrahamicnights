@@ -10,14 +10,7 @@ const Videos = () => {
       <p className='intro'>{ vid.intro }</p>
         {
           vid.url &&
-          <iframe
-            title={ vid.url }
-            width="320"
-            height="220"
-            src={ vid.url }
-            frameBorder="0" 
-            allowFullScreen>
-         </iframe>
+          <div class="youtube-player" data-id='CP5UB_gRED8'></div>
         }
         {
           vid.note &&
