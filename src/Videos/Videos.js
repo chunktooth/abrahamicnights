@@ -4,13 +4,16 @@ import './Videos.css';
 
 const Videos = () => {
   const mappedVids = vids.map((vid, index) => {
+    const vid_id = vid.url.map(link => {
+      return link.substr(30);
+    });
 
     return (
       <div key={ index } className='Vid'>
       <p className='intro'>{ vid.intro }</p>
         {
           vid.url &&
-          <div class="youtube-player" data-id='CP5UB_gRED8'></div>
+          <div className="youtube-player" data-id={ vid_id }></div>
         }
         {
           vid.note &&

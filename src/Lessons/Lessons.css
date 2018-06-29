@@ -22,12 +22,6 @@ th {
 
 @media screen and (max-width: 1047px) {
   table {
-    padding: 0 10%;
-  }
-}
-
-@media screen and (max-width: 647px) { 
-   table {
-    padding: 0 5%;
+    padding: 0 10px;
   }
 }
