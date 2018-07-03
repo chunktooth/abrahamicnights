@@ -17,7 +17,7 @@ const Lessons = () => {
 
   return (
     <table>
-      <th><h2>Weekly Lessons</h2></th>
+      <thead><tr><th>Weekly Lessons</th></tr></thead>
       <tbody>{ mappedLessons }</tbody>
     </table>
   )

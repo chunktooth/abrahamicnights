@@ -5,16 +5,28 @@ import Lessons from '../Lessons/Lessons';
 import Readings from '../Readings/Readings';
 import Videos from '../Videos/Videos';
 import Notes from '../Notes/Notes';
+import vids from '../data/vids';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      vids: []
+    }
+  }
+
+  componentDidMount() {
+    this.setState({ vids: vids })
+  }
+
   render(props) {
     return (
       <div className='App'>
         {
           this.props.location.pathname !== '/' &&
           <header>
-            <NavLink to='/' className='nav-header'>TheAbrahamicNights.COM</NavLink> 
+            <NavLink to='/' className='nav-header'>AbrahamicNights.COM</NavLink> 
           </header>
         }
         <ul>
@@ -27,11 +39,13 @@ class App extends Component {
           <Route exact path='/' component={ Home }/>
           <Route path='/lessons' component={ Lessons }/>
           <Route path='/readings' component={ Readings }/>
-          <Route path='/videos' component={ Videos }/>
+          <Route path='/videos' render={ () => 
+            <Videos vids={ this.state.vids }/> }
+          />
           <Route path='/notes' component={ Notes }/>
         </main>
         <footer>
-          <NavLink to='/' className='nav-header'>TheAbrahamicNights.COM</NavLink>
+          <NavLink to='/' className='nav-header'>AbrahamicNights.COM</NavLink>
           <p className='fb'>Like this on Facebook</p>
         </footer>
       </div>

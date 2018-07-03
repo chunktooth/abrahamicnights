@@ -1,8 +1,8 @@
 import React from 'react';
-import vids from '../data/vids';
 import './Videos.css';
 
-const Videos = () => {
+const Videos = ({ vids }) => { 
+
   const mappedVids = vids.map((vid, index) => {
     const vid_id = vid.url.map(link => {
       return link.substr(30);
@@ -26,7 +26,7 @@ const Videos = () => {
   return (
     <div className='Videos'>
       <h2>Supplemental Videos</h2>
-      <div>{ mappedVids }</div>
+      <div className='mapped-vids'>{ mappedVids }</div>
     </div>
   )
 }

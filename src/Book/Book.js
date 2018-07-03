@@ -5,10 +5,15 @@ const Book = ({ week, books }) => {
   const mappedBooks = books.map((book, index) => {
     let pageKey;
     let pageURL;
-    book.pages.forEach(page => {
+    const mappedPages = book.pages.map((page, index) => {
       for (let [key, val] of Object.entries(page)) {
-        pageKey = key;
+        pageKey = key
         pageURL = val;
+      }
+      if(pageURL) {
+        return <a href={ pageURL } key={ index }>&nbsp;{ pageKey }&nbsp;</a>
+      } else {
+        return <p key={ index }>&nbsp;{ pageKey }&nbsp;</p>;
       }
     });
 
@@ -30,14 +35,7 @@ const Book = ({ week, books }) => {
           book.publisher &&
           <p>&nbsp;{ book.publisher }.</p>
         }
-        {
-          pageURL &&
-          <p>&nbsp;pp. <a href={ pageURL }>{ pageKey }</a></p>
-        }   
-        {
-          !pageURL && pageKey &&
-          <p>&nbsp;pp. { pageKey }</p>
-        }     
+        { mappedPages }
       </div>
     )
   });
