@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactYoutube from 'react-youtube-lazy';
 import './Videos.css';
 
 const Videos = ({ vids }) => { 
@@ -13,7 +14,15 @@ const Videos = ({ vids }) => {
       <p className='intro'>{ vid.intro }</p>
         {
           vid.url &&
-          <div className="youtube-player" data-id={ vid_id }></div>
+          <ReactYoutube
+            videoID={ vid_id }
+            lazyload="true"
+            lazyloadSize={450}
+            youtubeOptions={{
+              autoplay: "",
+              red: "0"
+            }}
+          />
         }
         {
           vid.note &&
@@ -26,7 +35,7 @@ const Videos = ({ vids }) => {
   return (
     <div className='Videos'>
       <h2>Supplemental Videos</h2>
-      <div className='mapped-vids'>{ mappedVids }</div>
+      { mappedVids }
     </div>
   )
 }
