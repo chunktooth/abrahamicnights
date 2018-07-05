@@ -46,7 +46,6 @@ class App extends Component {
         </main>
         <footer>
           <NavLink to='/' className='nav-header'>AbrahamicNights.COM</NavLink>
-          <p className='fb'>Like this on Facebook</p>
         </footer>
       </div>
     );

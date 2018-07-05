@@ -1,13 +1,8 @@
 import React from 'react';
-import ReactYoutube from 'react-youtube-lazy';
 import './Videos.css';
 
 const Videos = ({ vids }) => { 
-
   const mappedVids = vids.map((vid, index) => {
-    const vid_id = vid.url.map(link => {
-      return link.substr(30);
-    });
 
     return (
       <div key={ index } className='Vid'>
@@ -17,20 +12,14 @@ const Videos = ({ vids }) => {
         }
         {
           !vid.note && vid.url &&
-          <div>
-            <ReactYoutube
-              className='ReactYoutube'
-              videoID={ vid_id }
-              lazyload="true"
-              lazyloadSize={ 300 }
-              transition="none"
-              thumbnailId="default"
-              thumbnailRes="maxres"
-              youtubeOptions={{
-                autoplay: "1",
-                red: "0"
-              }}
-            />
+          <div key={ index }>
+            <iframe 
+              width="320" 
+              height="186" 
+              src={ vid.url } 
+              frameborder="0" 
+              allow="autoplay; encrypted-media" 
+              allowfullscreen></iframe>
             <p className='intro'>{ vid.intro }</p>
           </div>
         }        

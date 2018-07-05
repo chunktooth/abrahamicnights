@@ -17,7 +17,6 @@ footer {
 ul,
 footer,
 header,
-.fb,
 .nav-header {
   margin: 0;
   padding: 0;
@@ -39,7 +38,6 @@ li {
 }
 
 li,
-.fb,
 .nav-header {
   color: white;
   padding: 35px;
@@ -102,7 +100,6 @@ footer {
 
 @media screen and (max-width: 931px) {
   li,
-  .fb,
   .nav-header {
     padding: 3%;
   }
@@ -110,7 +107,6 @@ footer {
 
 @media screen and (max-width: 768px) {
   li,
-  .fb,
   .nav-header {
     padding: 2%;
   }
@@ -128,8 +124,7 @@ footer {
     justify-content: center
   }
 
-  .nav-header,
-  .fb {
+  .nav-header {
     padding: 0;
   }
 

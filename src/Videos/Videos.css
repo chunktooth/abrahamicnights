@@ -12,34 +12,14 @@
   margin: 10px;
   width: 320px;
 }
-
-.intro,
-.ReactYoutube {
-  width: 100%;
-  text-align: justify;
-}
-
-/*
-.Vid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
-  margin: .5%;
-  width: 40%;
-  border: 1px solid black;
-}
-}*/
-
-/*.ReactYoutube-PlayAwait.ReactYoutube-fadeDone {
-  width: 642px !important;
-  height: 362px !important;
-}
-*/
-.ReactYoutube-PlayAwait.ReactYoutube-fadeDone {
+iframe {
   width: 320px !important;
-  height: 180px !important;
+  height: 186px !important;
+}
+
+.intro {
+  text-align: justify;
+  padding: 0 5px;
 }
 
 svg {
@@ -47,6 +27,7 @@ svg {
 }
 
 .note {
+  text-align: justify;
   font-weight: bold;
   color: #3B5550;
 }
@@ -56,4 +37,3 @@ svg {
     margin: 0;
   }
 }
-
