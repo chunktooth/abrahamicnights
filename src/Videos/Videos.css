@@ -1,13 +1,53 @@
-.Videos {
+.vdo-display {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  width: 100%;
+}
 
+.Vid {
+  width: 642px;
 }
 
 .intro {
+  width: 100%;
   text-align: justify;
+}
+
+/*
+
+.Vid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: .5%;
+  width: 40%;
+  border: 1px solid black;
+}
+
+.intro,
+.ReactYoutube {
+  width: 100%
+}*/
+
+.ReactYoutube-PlayAwait.ReactYoutube-fadeDone {
+  width: 642px !important;
+  height: 362px !important;
 }
 
 svg {
   left: 0;
+}
+
+.note {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: red;
 }
 
 @media screen and (max-width: 719px) {

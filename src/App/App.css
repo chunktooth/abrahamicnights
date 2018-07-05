@@ -39,7 +39,7 @@ li,
 .fb,
 .nav-header {
   color: white;
-  padding: 42px;
+  padding: 35px;
 }
 
 .nav-header,
@@ -93,6 +93,14 @@ footer {
   .Videos,
   .Notes {
     padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 931px) {
+  li,
+  .fb,
+  .nav-header {
+    padding: 3.5%;
   }
 }
 

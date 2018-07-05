@@ -11,23 +11,28 @@ const Videos = ({ vids }) => {
 
     return (
       <div key={ index } className='Vid'>
-      <p className='intro'>{ vid.intro }</p>
-        {
-          vid.url &&
-          <ReactYoutube
-            videoID={ vid_id }
-            lazyload="true"
-            lazyloadSize={450}
-            youtubeOptions={{
-              autoplay: "",
-              red: "0"
-            }}
-          />
-        }
         {
           vid.note &&
-          <p>{ vid.note }</p>
-        }      
+          <p className='note'>{ vid.note }</p>
+        }
+        {
+          !vid.note && vid.url &&
+          <div>
+            <p className='intro'>{ vid.intro }</p>
+            <ReactYoutube
+              className='ReactYoutube'
+              videoID={ vid_id }
+              lazyload="true"
+              lazyloadSize={ 300 }
+              thumbnailId="default"
+              thumbnailRes="maxres"
+              youtubeOptions={{
+                autoplay: "1",
+                red: "0"
+              }}
+            />
+          </div>
+        }        
       </div>
     )
   });
@@ -35,7 +40,7 @@ const Videos = ({ vids }) => {
   return (
     <div className='Videos'>
       <h2>Supplemental Videos</h2>
-      { mappedVids }
+      <div className='vdo-display'>{ mappedVids }</div>
     </div>
   )
 }
