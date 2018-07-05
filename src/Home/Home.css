@@ -23,8 +23,22 @@
   height: 100vh;
 }
 
+@media screen and (max-width: 1024px) {
+  .Home {
+    height: 86vh;
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+}
+
 @media screen and (max-width: 662px) {
   .title {
     font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    top: 32%;
   }
 }

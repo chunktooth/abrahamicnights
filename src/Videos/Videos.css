@@ -47,11 +47,8 @@ svg {
 }
 
 .note {
- /* width: 64%;*/
-/*  text-align: justify;*/
   font-weight: bold;
   color: #3B5550;
-  /*margin: 49px auto 27px;*/
 }
 
 @media screen and (max-width: 719px) {
@@ -59,3 +56,4 @@ svg {
     margin: 0;
   }
 }
+

@@ -8,7 +8,10 @@ footer {
   box-sizing: border-box;
   flex-direction: row;
   justify-content: space-evenly; 
+  width: 100%;
   height: 12vh;
+  position: relative;
+  z-index: 100
 }
 
 ul,
@@ -76,28 +79,45 @@ a:visited {
   text-decoration: underline #3B5550;
 }
 
-.Readings,
-.Notes {
-  padding: 0 20% 1%;
-}
-
 footer {
   position: relative;
   bottom: 0px;
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  ul,
+  footer {
+    height: 7vh;
+    position: fixed;
+  }
+
+  main {
+    position: relative;
+    top: 96px;
+    height: 86vh;
+    overflow: scroll;
+  }
+}
+
 @media screen and (max-width: 931px) {
   li,
   .fb,
   .nav-header {
-    padding: 3.5%;
+    padding: 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  li,
+  .fb,
+  .nav-header {
+    padding: 2%;
   }
 }
 
 @media screen and (max-width: 647px) {
-  .Readings,
-  .Notes {
+  .Readings {
     padding: 0;
   }
 
@@ -116,5 +136,18 @@ footer {
   li {
     width: 100%;
     padding: 0px
+  }
+}
+
+
+@media screen and (max-width: 1042px) {
+  header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    top: 72px;
   }
 }

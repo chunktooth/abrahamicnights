@@ -23,6 +23,7 @@ const Videos = ({ vids }) => {
               videoID={ vid_id }
               lazyload="true"
               lazyloadSize={ 300 }
+              transition="none"
               thumbnailId="default"
               thumbnailRes="maxres"
               youtubeOptions={{

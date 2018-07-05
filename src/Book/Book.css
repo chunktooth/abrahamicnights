@@ -21,3 +21,9 @@ td {
   width: 9%;
   text-align: center;
 }
+
+@media screen and (max-width: 414px) {
+  .book-div {
+    margin: 30px 0;
+  }
+}

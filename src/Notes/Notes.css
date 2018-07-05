@@ -6,3 +6,13 @@
   margin: 30px;
   text-align: justify;
 }
+
+@media screen and (max-width: 1024px) {
+  .Notes {
+    padding: 0;
+  }
+
+  .Notes p {
+    margin: 10px;
+  }
+}
