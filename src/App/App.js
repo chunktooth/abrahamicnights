@@ -44,9 +44,12 @@ class App extends Component {
           />
           <Route path='/notes' component={ Notes }/>
         </main>
-        <footer>
-          <NavLink to='/' className='nav-header'>AbrahamicNights.COM</NavLink>
-        </footer>
+        {
+          this.props.location.pathname === '/' &&
+          <footer>
+            <NavLink to='/' className='nav-header'>AbrahamicNights.COM</NavLink>
+          </footer>
+        }
       </div>
     );
   }
