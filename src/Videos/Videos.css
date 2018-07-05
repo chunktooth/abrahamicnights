@@ -2,22 +2,24 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   box-sizing: border-box;
   width: 100%;
+  padding: 20px;
 }
 
 .Vid {
-  width: 642px;
+  margin: 10px;
+  width: 320px;
 }
 
-.intro {
+.intro,
+.ReactYoutube {
   width: 100%;
   text-align: justify;
 }
 
 /*
-
 .Vid {
   display: flex;
   flex-wrap: wrap;
@@ -28,15 +30,16 @@
   width: 40%;
   border: 1px solid black;
 }
-
-.intro,
-.ReactYoutube {
-  width: 100%
 }*/
 
-.ReactYoutube-PlayAwait.ReactYoutube-fadeDone {
+/*.ReactYoutube-PlayAwait.ReactYoutube-fadeDone {
   width: 642px !important;
   height: 362px !important;
+}
+*/
+.ReactYoutube-PlayAwait.ReactYoutube-fadeDone {
+  width: 320px !important;
+  height: 180px !important;
 }
 
 svg {
@@ -44,18 +47,15 @@ svg {
 }
 
 .note {
-  width: 100%;
-  text-align: center;
+ /* width: 64%;*/
+/*  text-align: justify;*/
   font-weight: bold;
-  color: red;
+  color: #3B5550;
+  /*margin: 49px auto 27px;*/
 }
 
 @media screen and (max-width: 719px) {
   .Videos {
     margin: 0;
-  }
-
-  .intro {
-    margin: 0 10px;
   }
 }

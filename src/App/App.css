@@ -50,7 +50,7 @@ li,
 
 h2 {
   margin: 0;
-  padding: 30px 20px;
+  padding: 30px 20px 0;
 }
 
 h3 {
@@ -77,7 +77,6 @@ a:visited {
 }
 
 .Readings,
-.Videos,
 .Notes {
   padding: 0 20% 1%;
 }
@@ -86,14 +85,6 @@ footer {
   position: relative;
   bottom: 0px;
   width: 100%;
-}
-
-@media screen and (max-width: 1047px) {
-  .Readings,
-  .Videos,
-  .Notes {
-    padding: 0 10%;
-  }
 }
 
 @media screen and (max-width: 931px) {
@@ -106,7 +97,6 @@ footer {
 
 @media screen and (max-width: 647px) {
   .Readings,
-  .Videos,
   .Notes {
     padding: 0;
   }

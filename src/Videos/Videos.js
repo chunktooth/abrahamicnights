@@ -18,7 +18,6 @@ const Videos = ({ vids }) => {
         {
           !vid.note && vid.url &&
           <div>
-            <p className='intro'>{ vid.intro }</p>
             <ReactYoutube
               className='ReactYoutube'
               videoID={ vid_id }
@@ -31,6 +30,7 @@ const Videos = ({ vids }) => {
                 red: "0"
               }}
             />
+            <p className='intro'>{ vid.intro }</p>
           </div>
         }        
       </div>
