@@ -1,15 +1,14 @@
 .Home {
-  position: relative;
   margin: 0;
-  height: 92vh;
+  height: 76vh;
   background-image: url('../img/homepage.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .title {
-  position: relative;
-  top: 33%;
+  position: fixed;
+  top: 40%;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -19,19 +18,6 @@
   letter-spacing: 4px;
   vertical-align: middle;
 }
-
-@media screen and (max-width: 1024px) {
-  .Home {
-    height: 86vh;
-    background-repeat: no-repeat;
-    background-size: cover
-  }
-
-/*  .title {
-    top: 45%;
-  }*/
-}
-
 
 @media screen and (max-width: 662px) {
   .title {

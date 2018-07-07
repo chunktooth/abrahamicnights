@@ -46,7 +46,7 @@ class App extends Component {
         </main>
         {
           this.props.location.pathname === '/' &&
-          <footer>AbrahamicNights.COM</footer>
+          <footer><p>AbrahamicNights.COM</p></footer>
         }
       </div>
     );
