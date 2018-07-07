@@ -1,6 +1,6 @@
 .Home {
   margin: 0;
-  height: 76vh;
+  height: 88vh;
   background-image: url('../img/homepage.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,11 +22,5 @@
 @media screen and (max-width: 662px) {
   .title {
     font-size: 3em;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .title {
-    top: 25%;
   }
 }

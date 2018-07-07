@@ -20,7 +20,7 @@ const Videos = ({ vids }) => {
               src={ vid.url } 
               frameBorder="0" 
               allow="autoplay; encrypted-media" 
-              allowfullscreen></iframe>
+              allowFullScreen></iframe>
             <p className='intro'>{ vid.intro }</p>
           </div>
         }        

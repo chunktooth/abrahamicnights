@@ -22,32 +22,38 @@ class App extends Component {
 
   render(props) {
     return (
-      <div className='App'>
-        {
-          this.props.location.pathname !== '/' &&
-          <header>
-            <NavLink to='/' className='nav-header'>AbrahamicNights.COM</NavLink> 
-          </header>
-        }
+      <div className='App'>     
         <ul>
           <li><NavLink to='/lessons' className='nav' activeClassName='selected'>Weekly Lessons</NavLink></li>
           <li><NavLink to='/readings' className='nav' activeClassName='selected'>Additional Readings</NavLink></li>
           <li><NavLink to='/videos' className='nav' activeClassName='selected'>Supplemental Video Clips</NavLink></li>
           <li><NavLink to='/notes' className='nav' activeClassName='selected'>Source Notes</NavLink></li>         
-        </ul>
-        <main>  
-          <Route exact path='/' component={ Home }/>
-          <Route path='/lessons' component={ Lessons }/>
-          <Route path='/readings' component={ Readings }/>
-          <Route path='/videos' render={ () => 
-            <Videos vids={ this.state.vids }/> }
-          />
-          <Route path='/notes' component={ Notes }/>
-        </main>
-        {
-          this.props.location.pathname === '/' &&
-          <footer><p>AbrahamicNights.COM</p></footer>
-        }
+        </ul>     
+          {
+            this.props.location.pathname === '/' &&
+            <div>
+              <main className='Homepage'>
+                <Route exact path='/' component={ Home }/>
+              </main>
+              <footer><p>AbrahamicNights.COM</p></footer>
+            </div>
+          }
+          {
+            this.props.location.pathname !== '/' &&
+            <div>
+              <main className='Content'>     
+                <Route path='/lessons' component={ Lessons }/>
+                <Route path='/readings' component={ Readings }/>
+                <Route path='/videos' render={ () => 
+                  <Videos vids={ this.state.vids }/> }
+                />
+                <Route path='/notes' component={ Notes }/>
+              </main>
+              <footer>
+                <NavLink to='/' className='footer-nav'>AbrahamicNights.COM</NavLink> 
+              </footer>
+            </div>
+          }      
       </div>
     );
   }
