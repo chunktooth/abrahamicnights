@@ -47,8 +47,7 @@ footer {
 
 li,
 .nav,
-footer,
-.footer-nav, {
+footer {
   color: beige;
   text-decoration: none;
 }
@@ -58,24 +57,21 @@ footer,
   font-weight: bold;
   color: beige;
 }
-
 li:hover,
 li:active,
+.footer-nav:hover,
 .selected {
-  text-decoration: underline #3B5550;
+  text-decoration-line: underline;
+  text-decoration-style: double;
 }
 
 footer p,
-.footer-nav {
-  color: beige;
-  margin: auto;
-}
-
-.footer-nav.selected,
+.footer-nav,
 .footer-nav:active,
 .footer-nav:visited {
   color: beige;
-  text-decoration: none
+  margin: auto;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 762px) {
