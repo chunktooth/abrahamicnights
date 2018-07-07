@@ -37,3 +37,9 @@ svg {
     margin: 0;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .vdo-display {
+    padding: ;
+  }
+}

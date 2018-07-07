@@ -1,13 +1,15 @@
 .Home {
   position: relative;
   margin: 0;
-  height: 76vh;
-  background-image: url('../img/homepage.jpeg')
+  height: 92vh;
+  background-image: url('../img/homepage.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title {
   position: relative;
-  top: 40%;
+  top: 33%;
   margin: 0;
   width: 100%;
   color: beige;
@@ -16,16 +18,10 @@
   letter-spacing: 4px;
   vertical-align: middle;
 }
-.abrahamicNights {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-}
 
 @media screen and (max-width: 1024px) {
   .Home {
-    height: 86vh;
+    height: 76vh;
     background-repeat: no-repeat;
     background-size: cover
   }
@@ -37,7 +33,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .title {
     top: 32%;
   }

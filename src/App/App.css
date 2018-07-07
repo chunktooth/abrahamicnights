@@ -2,113 +2,91 @@
   text-align: center;
 }
 
-ul,
+header {
+  padding: 5px 0;
+  width: 100%;
+  height: 3vh;
+  background-color: #3F5D61;
+}
+
+.nav-header:visited {
+  text-decoration: none;
+}
+
+ul, 
 footer {
   display: flex;
   box-sizing: border-box;
   flex-direction: row;
   justify-content: space-evenly; 
-  width: 100%;
-  height: 12vh;
-  position: relative;
-  z-index: 100
+  z-index: 100;
+  background-color: #263934;
 }
 
 ul,
-footer,
 header,
-.nav-header {
+footer {
   margin: 0;
-  padding: 0;
-  background-color: #263934;
+  width: 100%;
   letter-spacing: 2px;
   font-family: 'Fondamento', cursive;
   font-size: 1em;
+  color: beige;  
 }
 
-header,
-header .nav-header {
-  padding: 20px;
-  background-color: #3B5550;
+ul {
+  padding: 5px 0;
 }
 
 li {
   display: inline;
   list-style: none;
+  padding: 35px;
+  margin: auto;
 }
 
 li,
-.nav-header {
-  color: white;
-  padding: 35px;
-}
-
 .nav-header,
-.nav {
-  color: white;
+.nav,
+footer {
+  color: beige;
   text-decoration: none;
 }
 
-h2 {
-  margin: 0;
-  padding: 30px 20px 0;
-}
 
-h3 {
-  margin: 0;
-}
-
-a {
+.nav {
   text-decoration: none;
   font-weight: bold;
 }
 
 li:hover,
-li:active {
-  text-decoration: underline #3B5550;
-  /*background-color: #52737D;*/
-}
-
-a:visited {
-  text-decoration: underline;
-}
-
+li:active,
 .selected {
   text-decoration: underline #3B5550;
 }
 
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0px;
   width: 100%;
-}
-
-@media screen and (max-width: 1024px) {
-  ul,
-  footer {
-    height: 7vh;
-    position: fixed;
-  }
-
-  main {
-    position: relative;
-    top: 96px;
-    height: 86vh;
-    overflow: scroll;
-  }
+  padding: 35px;
 }
 
 @media screen and (max-width: 931px) {
   li,
-  .nav-header {
+  footer {
     padding: 3%;
   }
 }
 
 @media screen and (max-width: 768px) {
   li,
-  .nav-header {
-    padding: 2%;
+  footer {
+    padding: 5.4%;
+  },
+
+  main {
+    top: 72px;
   }
 }
 
@@ -124,7 +102,7 @@ footer {
     justify-content: center
   }
 
-  .nav-header {
+  footer {
     padding: 0;
   }
 
@@ -134,15 +112,3 @@ footer {
   }
 }
 
-
-@media screen and (max-width: 1042px) {
-  header {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  main {
-    top: 72px;
-  }
-}

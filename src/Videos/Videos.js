@@ -13,11 +13,12 @@ const Videos = ({ vids }) => {
         {
           !vid.note && vid.url &&
           <div key={ index }>
-            <iframe 
+            <iframe
+              title={ index } 
               width="320" 
               height="186" 
               src={ vid.url } 
-              frameborder="0" 
+              frameBorder="0" 
               allow="autoplay; encrypted-media" 
               allowfullscreen></iframe>
             <p className='intro'>{ vid.intro }</p>

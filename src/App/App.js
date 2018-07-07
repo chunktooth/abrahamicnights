@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({ vids: vids })
+    this.setState({ vids })
   }
 
   render(props) {
@@ -46,9 +46,7 @@ class App extends Component {
         </main>
         {
           this.props.location.pathname === '/' &&
-          <footer>
-            <NavLink to='/' className='nav-header'>AbrahamicNights.COM</NavLink>
-          </footer>
+          <footer>AbrahamicNights.COM</footer>
         }
       </div>
     );
