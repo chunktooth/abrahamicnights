@@ -8,6 +8,10 @@ var logger = require('morgan');
 
 var app = express();
 
+app.get('/', function (req, res) {
+  res.send('root')
+})
+
 app.use(express.static(path.join(__dirname, 'build')));
 
 module.exports = app;
