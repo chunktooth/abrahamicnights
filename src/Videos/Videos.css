@@ -10,10 +10,11 @@
 
 .Vid {
   margin: 10px;
-  width: 320px;
+  width: 370px;
 }
+
 iframe {
-  width: 320px !important;
+  width: 370px !important;
   height: 186px !important;
 }
 

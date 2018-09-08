@@ -133,7 +133,9 @@ const vids = [
   {
     "note": "NOTE- Since the time of writing Ramadan has facedmultiple accusations of sexual harrassment so his prestige has taken a hit.",
     "intro": "",
-    "url": []
+    "url": [ 
+      ""
+    ]
   },
 
   {
