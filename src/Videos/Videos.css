@@ -41,6 +41,6 @@ svg {
 
 @media screen and (max-width: 375px) {
   .vdo-display {
-    padding: ;
+    padding: 0;
   }
 }
