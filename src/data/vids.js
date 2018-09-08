@@ -115,17 +115,11 @@ const vids = [
 
   {
     "note": "",
-    "intro": "Yusuf al Qaradawi-  Perhaps the most popular Sheikh in the world by number of followers.  A prolific author, preacher and television personality.  Originally Egyptian and educated at Al Azhar but based in Qatar.  He has many sermons on YouTube that are translated into English, unlike most of the above.  Here is a sample on two of the favourite topics of Evangelicals and Islamists alike- homosexuals and Jews.",
+    "intro": "Yusuf al Qaradawi-  Perhaps the most popular Sheikh in the world by number of followers.  A prolific author, preacher and television personality.  Originally Egyptian and educated at Al Azhar but based in Qatar.  He has many sermons on YouTube that are translated into English, unlike most of the above.  Here is a sample on two of the favourite topics of Evangelicals and Islamists alike.",
     "url": [ 
       "https://www.youtube.com/embed/IRiwshIzHu8",
       "https://www.youtube.com/embed/NxnVSnnZs0Q"
     ]
-  },
-
-  {
-    "note": "NOTE- Since the time of writing Ramadan has facedmultiple accusations of sexual harrassment so his prestige has taken a hit.",
-    "intro": "",
-    "url": []
   },
 
   {
@@ -134,6 +128,12 @@ const vids = [
     "url": [
       "https://www.youtube.com/embed/_CGFMwtJTyE"
     ]
+  },
+
+  {
+    "note": "NOTE- Since the time of writing Ramadan has facedmultiple accusations of sexual harrassment so his prestige has taken a hit.",
+    "intro": "",
+    "url": []
   },
 
   {
