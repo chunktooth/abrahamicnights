@@ -15,7 +15,7 @@ const Videos = ({ vids }) => {
           <div key={ index }>
             <iframe
               title={ index } 
-              width="320" 
+              width="375" 
               height="186" 
               src={ vid.url } 
               frameBorder="0" 
