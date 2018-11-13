@@ -1,3 +1,8 @@
+.sub-heading {
+  margin: 15px auto;
+  width: 50%;
+}
+
 .vdo-display {
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +14,7 @@
   flex-grow: 1;
 }
 
-.Vid {
+.Vid {`
   margin: 10px;
   width: 375px;
 }
