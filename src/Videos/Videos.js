@@ -31,7 +31,7 @@ const Videos = ({ vids }) => {
   return (
     <div className='Videos'>
       <h2>Supplemental Videos</h2>
-      <h5 className='sub-heading'>The following YouTube videos are frequently removed or taken offline for whatever reasons. Links that no longer work will eventually be replaced by a new link to a current video clip. In the interim, one can always enter the name of the subject in the YouTube searchbar</h5>
+      <h5 className='sub-heading'>The following YouTube videos are frequently removed or taken offline for whatever reasons. Links that no longer work will eventually be replaced by a new link to a current video clip. In the interim, one can always enter the name of the subject in the YouTube search bar.</h5>
       <div className='vdo-display'>{ mappedVids }</div>
     </div>
   )
