@@ -14,11 +14,11 @@
   flex-grow: 1;
 }
 
-.Vid {`
+.Vid {
   margin: 10px;
   width: 375px;
 }
-
+ 
 .intro {
   text-align: justify;
   padding: 0 5px;
